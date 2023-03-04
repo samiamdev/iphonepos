@@ -1,0 +1,6 @@
+
+<template>
+    Stock Page
+</template>
+
+
