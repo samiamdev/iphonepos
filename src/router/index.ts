@@ -1,13 +1,8 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
 import Home from '@/views/HomeView.vue';
-import UserRegisterVue from '@/views/UserRegister.vue';
-import TestVue from '@/views/test.vue';
-import Admin from '@/views/Admin.vue';
-import Stock from '@/views/Stock/Stocks.vue';
-import ReOrder from '@/views/Stock/ReOrders.vue';
-import RecieveOrder from '@/views/Stock/RecieveOreder.vue';
-import Customer from '@/views/Customers/Customers.vue';
-import Reports from '@/views/Reports/Reports.vue';
+import Admin from '@/views/Admin/Admin.vue';
+import AddUser from '@/views/test/AddUser.vue';
+import EditUser from '@/views/test/EditUser.vue';
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
@@ -19,42 +14,73 @@ const routes: Array<RouteRecordRaw> = [
     name: 'AdminPage',
     component: Admin,
     children: [
-      { path: 'stock', name: 'StockPage', component: Stock },
-      { path: 'register', name: 'RegisterPage', component: UserRegisterVue },
-      { path: 'reorder', name: 'ReOrderPage', component: ReOrder },
+      {
+        path: 'stock',
+        name: 'StockPage',
+        component: () => import('@/views/Stock/Stocks.vue')
+      },
+      {
+        path: 'reorder',
+        name: 'ReOrderPage',
+        component: () => import('@/views/Stock/ReOrders.vue')
+      },
       {
         path: 'recieveorder',
         name: 'RecieveOrderPage',
-        component: RecieveOrder
+        component: () => import('@/views/Stock/RecieveOreder.vue')
       },
       {
         path: 'customer',
         name: 'CustomerPage',
-        component: Customer
+        component: () => import('@/views/Customers/Customers.vue')
+      },
+      {
+        path: 'register',
+        name: 'RegisterPage',
+        component: () => import('@/views/UserRegister.vue')
       },
       {
         path: 'reports',
         name: 'ReportPage',
-        component: Reports
+        component: () => import('@/views/Reports/Reports.vue')
+      },
+      {
+        path: 'supplier',
+        name: 'SupplierPage',
+        component: () => import('@/views/manager/Supplier.vue')
+      },
+      {
+        path: 'employee',
+        name: 'EmployeePage',
+        component: () => import('@/views/manager/Employee.vue')
+      },
+      {
+        path: 'credit',
+        name: 'CustomerCreditPage',
+        component: () => import('@/views/manager/Customer.vue')
       }
     ]
   },
   {
-    path: '/test',
-    name: 'test',
-    component: TestVue
+    path: '/users',
+    name: 'AddUser',
+    component: AddUser
   },
   {
-    path: '/register',
-    name: 'register',
-    component: UserRegisterVue
+    path: '/users/edit',
+    name: 'EditUser',
+    component: () => import('@/views/test/EditUser.vue')
+  },
+  {
+    path: '/users/dashboard',
+    name: 'DashboardUser',
+    component: () => import('@/views/test/DashboardUser.vue')
+  },
+  {
+    path: '/users/detail',
+    name: 'UserDetail',
+    component: () => import('@/views/test/UserDetail.vue')
   }
-
-  // {
-  //   path: '/admin/stock',
-  //   name: 'Stocks',
-  //   component: Stock
-  // }
 ];
 
 const router = createRouter({

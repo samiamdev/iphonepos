@@ -3190,6 +3190,11 @@ follow-redirects@^1.0.0, follow-redirects@^1.15.0:
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.2.tgz#b460864144ba63f2681096f274c4e57026da2c13"
   integrity sha512-VQLG33o04KaQ8uYi2tVNbdrWp1QWxNNea+nmIB4EVM28v0hmP17z7aG1+wAkNzVq4KeXTq3221ye5qTJP91JwA==
 
+fontawesome-4.7@^4.7.0:
+  version "4.7.0"
+  resolved "https://registry.yarnpkg.com/fontawesome-4.7/-/fontawesome-4.7-4.7.0.tgz#985d66d225180600d78f5808f149ecbfeabcc11c"
+  integrity sha512-K+pJ9tR3Z+youCvMOtqwJyyM69dlAQflrahXTV3KExWTAFHqR+MgeEC/dF3Q7nUNOJRMOX8GIPzzGbnh4GMrkw==
+
 fork-ts-checker-webpack-plugin@^6.4.0:
   version "6.5.2"
   resolved "https://registry.yarnpkg.com/fork-ts-checker-webpack-plugin/-/fork-ts-checker-webpack-plugin-6.5.2.tgz#4f67183f2f9eb8ba7df7177ce3cf3e75cdafb340"

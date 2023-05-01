@@ -6,9 +6,10 @@ function display() {
 }
 </script>
 
-<template lang="pug">
-button(type="button"  :class="{prop: props.clickme}" @click="display")
-    <slot></slot>
+<template>
+  <button>
+    <slot />
+  </button>
 </template>
 <style scoped>
 button {

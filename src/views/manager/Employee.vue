@@ -1,14 +1,17 @@
 <script setup lang="ts" >
 import { ref, reactive } from 'vue';
 import MainLayout from '@/components/MainLayout.vue';
-import FormVue from '@/components/elements/FormVue.vue';
+import axios from 'axios';
 const label = reactive(
-    { name: 'ชื่อผู้ผลิต', email: 'อีเมลล์', phone: 'เบอร์โทรศัพท์', address: 'ที่อยู่' })
+    { name: 'ชื่อพนักงาน', email: 'อีเมลล์', phone: 'เบอร์โทรศัพท์', address: 'ที่อยู่' })
+
+axios.post('users').then()
+
 </script>
 
 <template>
     <div>
-        <MainLayout>
+        <MainLayout box-title="จัดการข้อมูลพนักงาน">
             <template #inputbox>
                 <label>{{ label.name }}</label>
                 <input type="text">

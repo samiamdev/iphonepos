@@ -44,7 +44,7 @@ li a {
   font-weight: 600;
 }
 
-a.router-link-exact-active {
+.router-link-active {
   color: #000;
 }
 </style>
