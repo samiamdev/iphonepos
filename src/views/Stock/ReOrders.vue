@@ -1,7 +1,7 @@
-<script setup lang="ts" ></script>
+<script setup lang="ts"></script>
 
 <template>
-    <div> Re-Order Page </div>
+  <div>Re-Order Page</div>
 </template>
 
 <style></style>

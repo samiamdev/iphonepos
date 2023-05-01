@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import { Ref, ref } from 'vue';
+import { Ref, ref } from "vue";
 
-const button = ref([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, '.']);
-let display = ref('');
+const button = ref([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, "."]);
+let display = ref("");
 
 const sumTotal = ref<number | string>(0);
 
 const getValue = (n: number) => {
-  let val = (display.value += n + '');
+  let val = (display.value += n + "");
 };
 
 const clearDisplay = () => {
@@ -15,7 +15,7 @@ const clearDisplay = () => {
 };
 
 const sliceNum = function () {
-  display.value = '';
+  display.value = "";
 };
 
 const sign = function () {

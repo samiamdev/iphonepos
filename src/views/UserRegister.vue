@@ -1,22 +1,22 @@
 <script lang="ts">
-import { defineComponent, ref } from 'vue';
-import IUser from '../types/createUser';
+import { defineComponent, ref } from "vue";
+import IUser from "../types/createUser";
 export default defineComponent({
   setup() {
     let data = ref<IUser[]>([
-      { u_username: '' },
-      { u_password: '' },
-      { u_firstname: '' },
-      { u_lastname: '' },
-      { u_phone: '' },
-      { u_email: '' }
+      { u_username: "" },
+      { u_password: "" },
+      { u_firstname: "" },
+      { u_lastname: "" },
+      { u_phone: "" },
+      { u_email: "" },
     ]);
     const onSubmit = function () {
       console.log(data.value);
     };
 
     return { data, onSubmit };
-  }
+  },
 });
 </script>
 

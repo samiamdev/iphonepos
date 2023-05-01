@@ -1,21 +1,21 @@
 ﻿<script setup lang="ts">
-import axios from 'axios';
-import { reactive, ref } from 'vue';
-import User from './types/user.type';
-import Modal from '@/components/ModalNumpad.vue';
+import axios from "axios";
+import { reactive, ref } from "vue";
+import User from "./types/user.type";
+import Modal from "@/components/ModalNumpad.vue";
 
 const user = ref<User[]>([
   {
-    name: 'pirat',
-    surname: 'piyamat',
+    name: "pirat",
+    surname: "piyamat",
     age: 26,
-    email: 'pirat@homail.com',
-    phone: '0833434342'
-  }
+    email: "pirat@homail.com",
+    phone: "0833434342",
+  },
 ]);
 
 const onSave = function () {
-  axios.post('users', ...user.value).then(data => console.log(data));
+  axios.post("users", ...user.value).then((data) => console.log(data));
 };
 </script>
 

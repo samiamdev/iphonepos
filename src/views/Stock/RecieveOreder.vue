@@ -1,7 +1,7 @@
-<script setup lang="ts" ></script>
+<script setup lang="ts"></script>
 
 <template>
-    <div> Recieve - Order Page</div>
+  <div>Recieve - Order Page</div>
 </template>
 
 <style></style>

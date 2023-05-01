@@ -1,3 +1,1 @@
-<template>
-    Report Page
-</template>
+<template>Report Page</template>

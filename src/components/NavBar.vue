@@ -1,9 +1,8 @@
 <script setup lang="ts">
-import { ref } from 'vue';
-const prop = defineProps(['pathName'])
+import { ref } from "vue";
+const prop = defineProps(["pathName"]);
 
-const routes = prop.pathName
-
+const routes = prop.pathName;
 </script>
 <template>
   <nav>

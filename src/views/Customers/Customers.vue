@@ -1,3 +1,1 @@
-<template>
-    Customer Page
-</template>
+<template>Customer Page</template>

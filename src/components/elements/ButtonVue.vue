@@ -1,8 +1,8 @@
 <script setup lang="ts">
-const props = defineProps(['clickme']);
-const emits = defineEmits(['play']);
+const props = defineProps(["clickme"]);
+const emits = defineEmits(["play"]);
 function display() {
-  emits('play');
+  emits("play");
 }
 </script>
 
